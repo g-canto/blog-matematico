@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="title" onclick="toggleTitleColor()">Blog Matemático Interactivo</h1>
+    <header class="header">
+        <h1 class="header-title" id="title" onclick="toggleTitleColor()">Blog Matemático Interactivo</h1>
     </header>
 
-    <section>
-        <p onclick="toggleListVisibility('conceptos')">
+    <section class="content">
+        <p onclick="toggleListVisibility('conceptos')" class="content-card">
             Conceptos Básicos (Haz clic aquí para mostrar u ocultar la lista)
         </p>
         <ul id="conceptos">
@@ -28,7 +28,7 @@
             <li onclick="highlightElement(this)">Cálculo: Análisis del cambio y del movimiento.</li>
             <li onclick="highlightElement(this)">Estadística: Análisis y tratamiento de datos.</li>
         </ul>
-        <p>Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)</p>
+        <p class="content-card">Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)</p>
         <table>
             <tr>
                 <th>Tema</th>
@@ -53,7 +53,7 @@
                 <td onclick="highlightElement(this)">a³ + b³ = (a + b)(a²− ab + b²)</td>
             </tr>
         </table>
-        <p onclick="toggleListVisibility('pasos')">
+        <p onclick="toggleListVisibility('pasos')" class="content-card">
             Pasos para resolver un problema (Haz clic aquí para mostrar u ocultar los pasos)
         </p>
         <ol id="pasos">
@@ -62,7 +62,7 @@
             <li onclick="highlightElement(this)">Ejecutar las operaciones requeridas.</li>
             <li onclick="highlightElement(this)">Revisar y verificar la solución.</li>
         </ol>
-        <p onclick="toggleListVisibility('casos')">Casos de factorización</p>
+        <p onclick="toggleListVisibility('casos')" class="content-card">Casos de factorización</p>
         <ul id="casos">
             <li>Factor Común por Agrupación de Términos
                 <p>Ejemplo: ax + bx + ay + by = x(a + b) + y(a + b) = (a + b)(x + y)</p>
@@ -95,8 +95,6 @@
         </ul>
 
     </section>
-
-
     <script src="script.js" defer></script>
 </body>
 
