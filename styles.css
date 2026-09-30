@@ -66,15 +66,15 @@ li {
     padding: 4px;
 }
 
-.oculto {
+.hidden {
     display: none;
 }
 
-.resaltado {
+.selected {
     background-color: #d4efdf;
     color: #196f3d;
 }
 
-.cambio-color {
+.title-color-change {
     color: #c0392b;
 }

@@ -1,11 +1,11 @@
- function cambiarColorTitulo() {
-            var titulo = document.getElementById('titulo');
-            titulo.classList.toggle('cambio-color');
+ function toggleTitleColor() {
+            const title = document.getElementById('title');
+            title.classList.toggle('title-color-change');
         }
-        function alternarLista(id) {
-            var lista = document.getElementById(id);
-            lista.classList.toggle('oculto');
+        function toggleListVisibility(id) {
+            const list = document.getElementById(id);
+            list.classList.toggle('hidden');
         }
-        function resaltarElemento(elemento) {
-            elemento.classList.toggle('resaltado');
+        function highlightElement(element) {
+            element.classList.toggle('selected');
         }
