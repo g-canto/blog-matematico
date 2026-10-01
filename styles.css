@@ -1,41 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     max-width: 700px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 10px;
     color: #222;
+    background-image: url(assets/bg.jpg);
     
 }
 
-/* h1 {
-    color: #1a5276;
-    cursor: pointer;
-    border-bottom: 2px solid #1a5276;
-    padding-bottom: 5px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-} */
 
-.header-title {
-    color: #1a5276;
-    cursor: pointer;
-    border-bottom: 2px solid #1a5276;
-    padding-bottom: 5px;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h2 {
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 4px;
-    font-weight: normal;
-    
-}
 
 p {
     font-size: 16px;
@@ -77,16 +52,41 @@ li {
     padding: 4px;
 }
 
-.content {
-    background-color: #585454;
-    border-width: 10px;
-    border-color: #1a5276;
-    border-style: solid;
+.header {
+    background-color: #EFF6FF;
 }
 
-.card {
-    background-color: white;
+.header-title {
+    color: #1a5276;
+    cursor: pointer;
+    border: 5px solid #1a5276;
+    padding: 5px;
+    margin: 10 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
+
+.content {
+    background-color: #EFF6FF;
+    border: 5px solid #1a5276;
+    padding: 0 5px;
+}
+
+.content-card {
+    margin: 5px 0;
+}
+
+.content-card-title {
+    background-color: #bbd4f6;
+    border: 2px solid #1a5276;
+    margin: 5px 0;
+}
+
+.content-card-title:hover {
+    background-color: #a4c6f4;
+}
+
 
 .hidden {
     display: none;

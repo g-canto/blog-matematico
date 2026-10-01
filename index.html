@@ -19,17 +19,18 @@
     </header>
 
     <section class="content">
-        <p onclick="toggleListVisibility('conceptos')" class="content-card">
-            Conceptos Básicos (Haz clic aquí para mostrar u ocultar la lista)
+        <p onclick="toggleListVisibility('conceptos')" class="content-card-title">
+            Conceptos Básicos
         </p>
-        <ul id="conceptos">
+        <ul id="conceptos" class="content-card">
             <li onclick="highlightElement(this)">Álgebra: Manipulación de símbolos y ecuaciones.</li>
             <li onclick="highlightElement(this)">Geometría: Estudio de las propiedades de figuras y espacios.</li>
             <li onclick="highlightElement(this)">Cálculo: Análisis del cambio y del movimiento.</li>
             <li onclick="highlightElement(this)">Estadística: Análisis y tratamiento de datos.</li>
         </ul>
-        <p class="content-card">Tabla de Fórmulas (Haz clic en cualquier celda para cambiar su color)</p>
-        <table>
+        <p class="content-card-title" onclick="toggleListVisibility('tabla')">Tabla de Fórmulas (Haz clic en cualquier celda
+            para cambiar su color)</p>
+        <table id="tabla" class="content-card-table">
             <tr>
                 <th>Tema</th>
                 <th>Fórmula</th>
@@ -53,17 +54,22 @@
                 <td onclick="highlightElement(this)">a³ + b³ = (a + b)(a²− ab + b²)</td>
             </tr>
         </table>
-        <p onclick="toggleListVisibility('pasos')" class="content-card">
-            Pasos para resolver un problema (Haz clic aquí para mostrar u ocultar los pasos)
+        <p onclick="toggleListVisibility('pasos')" class="content-card-title">
+            Pasos para resolver un problema 
         </p>
-        <ol id="pasos">
+        <ol id="pasos" class="content-card">
             <li onclick="highlightElement(this)">Comprender el problema planteado.</li>
             <li onclick="highlightElement(this)">Trazar un plan o seleccionar la fórmula.</li>
             <li onclick="highlightElement(this)">Ejecutar las operaciones requeridas.</li>
             <li onclick="highlightElement(this)">Revisar y verificar la solución.</li>
         </ol>
-        <p onclick="toggleListVisibility('casos')" class="content-card">Casos de factorización</p>
-        <ul id="casos">
+        <p onclick="toggleListVisibility('casos')" class="content-card-title">Casos de factorización</p>
+        <ul id="casos" class="content-card">
+            <li>
+                Factor Común
+                <p>Ejemplo: 2x + 4 = 2(x + 2)</p>
+            </li>
+
             <li>Factor Común por Agrupación de Términos
                 <p>Ejemplo: ax + bx + ay + by = x(a + b) + y(a + b) = (a + b)(x + y)</p>
             </li>
