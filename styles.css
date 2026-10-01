@@ -23,7 +23,7 @@ p {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 15px 0;
+    margin: 0;
 }
 
 th,
@@ -57,18 +57,22 @@ h1,h2,p,ul,ol {
 }
 
 .header {
+    display: flex;
+    border: 5px solid #1a5276;
     background-color: #EFF6FF;
     margin-bottom: 10px;
+    justify-content: center;
 }
 
 .header-title {
     color: #1a5276;
     cursor: pointer;
-    border: 5px solid #1a5276;
+    
     padding: 5px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 700;
     font-style: normal;
+    justify-content: center;
 }
 
 .content {
@@ -95,8 +99,17 @@ h1,h2,p,ul,ol {
     background-color: #a4c6f4;
 }
 
+.content-card-table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+}
+
 .content-card-paragraph {
-    background-color: #EFF6FF;
+    background-color:  #fafafa;
+    align-self: center;
 }
 
 
