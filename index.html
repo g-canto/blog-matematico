@@ -19,86 +19,100 @@
     </header>
 
     <section class="content">
-        <p onclick="toggleListVisibility('conceptos')" class="content-card-title">
-            Conceptos Básicos
-        </p>
-        <ul id="conceptos" class="content-card">
-            <li onclick="highlightElement(this)">Álgebra: Manipulación de símbolos y ecuaciones.</li>
-            <li onclick="highlightElement(this)">Geometría: Estudio de las propiedades de figuras y espacios.</li>
-            <li onclick="highlightElement(this)">Cálculo: Análisis del cambio y del movimiento.</li>
-            <li onclick="highlightElement(this)">Estadística: Análisis y tratamiento de datos.</li>
-        </ul>
-        <p class="content-card-title" onclick="toggleListVisibility('tabla')">Tabla de Fórmulas (Haz clic en cualquier celda
-            para cambiar su color)</p>
-        <table id="tabla" class="content-card-table">
-            <tr>
-                <th>Tema</th>
-                <th>Fórmula</th>
-            </tr>
-            <tr>
-                <td onclick="highlightElement(this)">Área del triángulo</td>
-                <td onclick="highlightElement(this)">Base por altura dividido entre 2</td>
-            </tr>
-            <tr>
-                <td onclick="highlightElement(this)">Teorema de Pitágoras</td>
-                <td onclick="highlightElement(this)">a elevado al cuadrado más b elevado al cuadrado igual a c elevado
-                    al
-                    cuadrado</td>
-            </tr>
-            <tr>
-                <td onclick="highlightElement(this)">Perímetro del círculo</td>
-                <td onclick="highlightElement(this)">2 por Pi por radio</td>
-            </tr>
-            <tr>
-                <td onclick="highlightElement(this)">Suma de cubos</td>
-                <td onclick="highlightElement(this)">a³ + b³ = (a + b)(a²− ab + b²)</td>
-            </tr>
-        </table>
-        <p onclick="toggleListVisibility('pasos')" class="content-card-title">
-            Pasos para resolver un problema 
-        </p>
-        <ol id="pasos" class="content-card">
-            <li onclick="highlightElement(this)">Comprender el problema planteado.</li>
-            <li onclick="highlightElement(this)">Trazar un plan o seleccionar la fórmula.</li>
-            <li onclick="highlightElement(this)">Ejecutar las operaciones requeridas.</li>
-            <li onclick="highlightElement(this)">Revisar y verificar la solución.</li>
-        </ol>
-        <p onclick="toggleListVisibility('casos')" class="content-card-title">Casos de factorización</p>
-        <ul id="casos" class="content-card">
-            <li>
-                Factor Común
-                <p>Ejemplo: 2x + 4 = 2(x + 2)</p>
-            </li>
+        <article class="content-card">
+            <p onclick="toggleListVisibility('conceptos')" class="content-card-title">
+                Conceptos Básicos
+            </p>
+            <ul id="conceptos" class="content-card-list">
+                <li onclick="highlightElement(this)">Álgebra: Manipulación de símbolos y ecuaciones.</li>
+                <li onclick="highlightElement(this)">Geometría: Estudio de las propiedades de figuras y espacios.</li>
+                <li onclick="highlightElement(this)">Cálculo: Análisis del cambio y del movimiento.</li>
+                <li onclick="highlightElement(this)">Estadística: Análisis y tratamiento de datos.</li>
+            </ul>
+        </article>
+        <article class="content-card">
+            <p class="content-card-title" onclick="toggleListVisibility('tabla')">Tabla de Fórmulas</p>
+            <div class="content-card-table-container" id="tabla">
+                <table class="content-card-table">
+                    <tr>
+                        <th>Tema</th>
+                        <th>Fórmula</th>
+                    </tr>
+                    <tr>
+                        <td onclick="highlightElement(this)">Área del triángulo</td>
+                        <td onclick="highlightElement(this)">Base por altura dividido entre 2</td>
+                    </tr>
+                    <tr>
+                        <td onclick="highlightElement(this)">Teorema de Pitágoras</td>
+                        <td onclick="highlightElement(this)">a elevado al cuadrado más b elevado al cuadrado igual a c
+                            elevado
+                            al
+                            cuadrado</td>
+                    </tr>
+                    <tr>
+                        <td onclick="highlightElement(this)">Perímetro del círculo</td>
+                        <td onclick="highlightElement(this)">2 por Pi por radio</td>
+                    </tr>
+                    <tr>
+                        <td onclick="highlightElement(this)">Suma de cubos</td>
+                        <td onclick="highlightElement(this)">a³ + b³ = (a + b)(a²− ab + b²)</td>
+                    </tr>
+                </table>
+                <p class="content-card-paragraph">Click en
+                    cualquier
+                    celda para cambiar su color</p>
+            </div>
 
-            <li>Factor Común por Agrupación de Términos
-                <p>Ejemplo: ax + bx + ay + by = x(a + b) + y(a + b) = (a + b)(x + y)</p>
-            </li>
+        </article>
+        <article class="content-card">
+            <p onclick="toggleListVisibility('pasos')" class="content-card-title">
+                Pasos para resolver un problema
+            </p>
+            <ol id="pasos" class="content-card">
+                <li onclick="highlightElement(this)">Comprender el problema planteado.</li>
+                <li onclick="highlightElement(this)">Trazar un plan o seleccionar la fórmula.</li>
+                <li onclick="highlightElement(this)">Ejecutar las operaciones requeridas.</li>
+                <li onclick="highlightElement(this)">Revisar y verificar la solución.</li>
+            </ol>
+        </article>
+        <article class="content-card">
+            <p onclick="toggleListVisibility('casos')" class="content-card-title">Casos de factorización</p>
+            <ul id="casos" class="content-card">
+                <li>
+                    Factor Común
+                    <p>Ejemplo: 2x + 4 = 2(x + 2)</p>
+                </li>
 
-            <li>Diferencia de Cuadrados
-                <p>Ejemplo: x² - 9 = (x + 3)(x - 3)</p>
-            </li>
+                <li>Factor Común por Agrupación de Términos
+                    <p>Ejemplo: ax + bx + ay + by = x(a + b) + y(a + b) = (a + b)(x + y)</p>
+                </li>
 
-            <li>Trinomio Cuadrado Perfecto (TCP)
-                <p>Ejemplo: x² + 6x + 9 = (x + 3)²</p>
-            </li>
+                <li>Diferencia de Cuadrados
+                    <p>Ejemplo: x² - 9 = (x + 3)(x - 3)</p>
+                </li>
 
-            <li>Trinomio de la Forma x² + bx + c
-                <p>Ejemplo: x² + 5x + 6 = (x + 3)(x + 2)</p>
-            </li>
+                <li>Trinomio Cuadrado Perfecto (TCP)
+                    <p>Ejemplo: x² + 6x + 9 = (x + 3)²</p>
+                </li>
 
-            <li>Trinomio de la Forma ax² + bx + c
-                <p>Ejemplo: 2x² + 7x + 3 = (2x + 1)(x + 3)</p>
-            </li>
+                <li>Trinomio de la Forma x² + bx + c
+                    <p>Ejemplo: x² + 5x + 6 = (x + 3)(x + 2)</p>
+                </li>
 
-            <li>Suma de Cubos
-                <p>Ejemplo: x³ + 8 = (x + 2)(x² - 2x + 4)</p>
-            </li>
+                <li>Trinomio de la Forma ax² + bx + c
+                    <p>Ejemplo: 2x² + 7x + 3 = (2x + 1)(x + 3)</p>
+                </li>
 
-            <li>Diferencia de Cubos
-                <p>Ejemplo: x³ - 27 = (x - 3)(x² + 3x + 9)</p>
-            </li>
+                <li>Suma de Cubos
+                    <p>Ejemplo: x³ + 8 = (x + 2)(x² - 2x + 4)</p>
+                </li>
 
-        </ul>
+                <li>Diferencia de Cubos
+                    <p>Ejemplo: x³ - 27 = (x - 3)(x² + 3x + 9)</p>
+                </li>
+
+            </ul>
+        </article>
 
     </section>
     <script src="script.js" defer></script>
