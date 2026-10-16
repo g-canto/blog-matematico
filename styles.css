@@ -4,29 +4,34 @@ body {
   font-style: normal;
   max-width: 700px;
   margin: 0 auto;
-  padding: 10px;
   color: #222;
   background-image: url(assets/bg.jpg);
 }
 
-h2 {
-  margin: 5px 0;
-}
-
+h2,
+h3,
 dd,
 dl,
 ul,
 ol,
 p {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .header {
-  display: flex;
   border: 5px solid #1a5276;
   background-color: #eff6ff;
+  margin-top: 10px;
   margin-bottom: 10px;
-  justify-content: center;
+}
+
+.header-entrada {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #1a5276;
+  background-color: #eff6ff;
 }
 
 .header-title {
@@ -36,14 +41,23 @@ p {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 10px;
   background-color: #eff6ff;
   border: 5px solid #1a5276;
-  padding: 0 10px;
+  padding: 5px;
 }
 
 .content-card {
@@ -108,6 +122,31 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.entry-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #bbd4f6;
+  border: 2px solid #1a5276;
+  padding: 8px;
+}
+
+.entry-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.entry-list {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
 }
 
 .hidden {

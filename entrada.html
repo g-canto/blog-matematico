@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title id="titulo-pagina">Cargando... - Blog Matemático</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header-title" id="title">Blog Matemático Interactivo</h1>
+    </header>
+
+    <main class="content" id="contenido-entrada">
+      <div class="entry-title-container">
+        <a href="index.html" class="entry-return">← Volver al índice</a>
+        <h2 class="entry-title" id="titulo-entrada">Cargando título...</h2>
+        <small class="entry-date" id="fecha-entrada"></small>
+      </div>
+
+      <div class="entry-post" id="cuerpo-post">Cargando contenido...</div>
+    </main>
+
+    <script src="posts.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const postId = params.get("id");
+      const postInfo = publicaciones.find((p) => p.id === postId);
+      const contenedor = document.getElementById("cuerpo-post");
+
+      if (postInfo) {
+        document.getElementById("titulo-pagina").textContent =
+          postInfo.titulo + " - Blog Matemático";
+        document.getElementById("titulo-entrada").textContent = postInfo.titulo;
+        document.getElementById("fecha-entrada").textContent =
+          "Publicado el: " + postInfo.fecha;
+
+        const script = document.createElement("script");
+        script.src = postInfo.archivo;
+        script.onload = () => {
+          contenedor.innerHTML = contenidoEntrada;
+        };
+        script.onerror = () => {
+          contenedor.innerHTML =
+            "<p>Error al cargar el contenido de la entrada.</p>";
+        };
+        document.body.appendChild(script);
+      } else {
+        contenedor.innerHTML = "<p>Entrada no encontrada.</p>";
+      }
+    </script>
+  </body>
+</html>
