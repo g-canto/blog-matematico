@@ -35,3 +35,5 @@ const publicaciones = [
     resumen: "Productos notables y sus algoritmos de resolución.",
   },
 ];
+
+const publicacionesOrdenadas = publicaciones.toReversed();
