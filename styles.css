@@ -82,12 +82,6 @@ p {
   border-collapse: collapse;
 }
 
-.content-card-table th,
-.content-card-table td {
-  border: 1px solid black;
-  padding: 8px;
-}
-
 .content-card-list {
   display: flex;
   flex-direction: column;
@@ -124,6 +118,13 @@ p {
   gap: 10px;
 }
 
+.entry {
+  display: flex;
+  flex-direction: column;
+  background-color: #bbd4f6;
+  border: 2px solid #1a5276;
+}
+
 .entry-content {
   display: flex;
   flex-direction: column;
@@ -146,12 +147,23 @@ p {
 .entry-list {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  gap: 5px;
 }
 
 .entry-header {
   display: flex;
   justify-content: space-between;
+}
+
+.entry-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.entry-table th,
+.entry-table td {
+  border: 1px solid black;
+  padding: 8px;
 }
 
 .hidden {

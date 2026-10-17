@@ -22,10 +22,10 @@ const publicaciones = [
   },
   {
     id: "03_conceptosBasicos",
-    titulo: "Conceptos Basicos",
+    titulo: "Conceptos Básicos",
     archivo: "entradas/03_conceptosBasicos.js",
     fecha: "2026-10-13",
-    resumen: "Conceptos basicos de la ",
+    resumen: "Conceptos básicos que maneja cada disciplina matemática. ",
   },
   {
     id: "04_productosNotables",
@@ -33,6 +33,13 @@ const publicaciones = [
     archivo: "entradas/04_productosNotables.js",
     fecha: "2026-10-13",
     resumen: "Productos notables y sus algoritmos de resolución.",
+  },
+  {
+    id: "05_factorizacionUno",
+    titulo: "Factorizacion I",
+    archivo: "entradas/05_factorizacionUno.js",
+    fecha: "2026-10-16",
+    resumen: "Primeros casos de factorización.",
   },
 ];
 

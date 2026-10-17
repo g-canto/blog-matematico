@@ -1,4 +1,4 @@
-contenidoEntrada = `
+contenidoEntrada = /* html */ `
 <section>
     <article class="content-card">
         
