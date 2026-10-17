@@ -31,11 +31,17 @@ if (
 ) {
   publicacionesOrdenadas.forEach((post) => {
     const li = document.createElement("li");
-    li.innerHTML = `
-                    <a class="entry-title" href="entrada.html?id=${post.id}">${post.titulo}</a>
-                    <span class="entry-date">${post.fecha}</span>
-                    <p class="entry-description">${post.resumen}</p>
-                `;
+    li.innerHTML = /* HTML */ `
+      <article class="entry">
+        <div class="entry-header">
+          <a class="entry-title" href="entrada.html?id=${post.id}"
+            >${post.titulo}</a
+          >
+          <time class="entry-date">${post.fecha}</time>
+        </div>
+        <p class="entry-description">${post.resumen}</p>
+      </article>
+    `;
     contenedorLista.appendChild(li);
   });
 } else {
