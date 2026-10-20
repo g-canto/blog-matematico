@@ -115,6 +115,7 @@ p {
 
 .entry {
   display: flex;
+  padding: 10px;
   flex-direction: column;
   background-color: #bbd4f6;
   border: 2px solid #1a5276;
@@ -123,6 +124,18 @@ p {
 .entry-content {
   display: flex;
   flex-direction: column;
+}
+
+.entry-title:link {
+  color: #1a5276;
+}
+
+.entry-title:visited {
+  color: #1a5276;
+}
+
+.entry-title:hover {
+  color: #0b2434;
 }
 
 .entry-title-container {
