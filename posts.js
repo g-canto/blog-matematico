@@ -41,6 +41,13 @@ const publicaciones = [
     fecha: "2026-10-16",
     resumen: "Primeros casos de factorización.",
   },
+  {
+    id: "06_factorizacionDos",
+    titulo: "Factorizacion II",
+    archivo: "entradas/06_factorizacionDos.js",
+    fecha: "2026-10-22",
+    resumen: "Continuación de casos de factorización.",
+  },
 ];
 
 const publicacionesOrdenadas = publicaciones.toReversed();
