@@ -25,11 +25,6 @@ contenidoEntrada = /* html */ `
           </li>
           <li>El resultado es: (x + 2)(x² - 2x + 4)</li>
         </ol>
-        <img
-          class="content-card-image"
-          src="assets/images/placeholder_cubos.jpeg"
-          alt="Ejemplo visual de suma y diferencia de cubos"
-        />
       </dd>
 
       <dt class="list-item-title">Trinomios x² + bx + c.</dt>
@@ -48,11 +43,6 @@ contenidoEntrada = /* html */ `
             El resultado es el producto de los binomios: (x + 3)(x + 2)
           </li>
         </ol>
-        <img 
-          class="content-card-image"
-          src="assets/images/placeholder_trinomio_simple.jpeg" 
-          alt="Representacion visual de trinomio x2+bx+c" 
-        />
       </dd>
 
       <dt class="list-item-title">Trinomios ax² + bx + c.</dt>
@@ -72,16 +62,9 @@ contenidoEntrada = /* html */ `
           <li>Escribimos la factorización preliminar: (2x + 4)(2x + 1) / 2</li>
           <li>Simplificamos dividiendo el primer paréntesis entre 2: (x + 2)(2x + 1)</li>
         </ol>
-        <img 
-          class="content-card-image"
-          src="assets/images/placeholder_trinomio_compuesto.jpeg" 
-          alt="Representacion visual de trinomio ax2+bx+c" 
-        />
       </dd>
-    </dl>
-    
-    <section class="strategy-section" style="padding: 0 1rem 1rem 1rem;">
-      <h3 class="list-item-title" style="margin-bottom: 0.5rem; border-bottom: 2px solid #ccc; padding-bottom: 0.5rem;">
+
+      <h3>
         Estrategia de factorización
       </h3>
       <div class="description-container">
@@ -91,21 +74,21 @@ contenidoEntrada = /* html */ `
           <strong>empezar buscando si hay un término común</strong> antes de probar 
           cualquier otra cosa.
         </p>
-        <ul style="line-height: 1.6; margin-top: 1rem;">
+        <ul>
           <li>
             <strong>Cualquier cantidad de términos:</strong>
             <ul>
               <li><em>Término común (Factorización I):</em> Identificamos si todos los términos comparten una literal o un divisor común.</li>
             </ul>
           </li>
-          <li style="margin-top: 0.5rem;">
+          <li>
             <strong>Si tiene 2 términos (Binomios):</strong>
             <ul>
               <li><em>Diferencia de cuadrados (Factorización I):</em> Se aplica si es una resta y ambos términos tienen raíz cuadrada exacta.</li>
               <li><em>Suma o diferencia de cubos (Factorización II):</em> Se aplica si se están sumando o restando y ambos tienen raíz cúbica exacta.</li>
             </ul>
           </li>
-          <li style="margin-top: 0.5rem;">
+          <li>
             <strong>Si tiene 3 términos (Trinomios):</strong>
             <ul>
               <li><em>Trinomio Cuadrado Perfecto (Factorización I):</em> Revisamos si el primer y tercer término tienen raíz cuadrada exacta y si el doble de su producto da el término de en medio.</li>
@@ -115,7 +98,8 @@ contenidoEntrada = /* html */ `
           </li>
         </ul>
       </div>
-    </section>
+    </dl>
+    
 
   </article>
 </section>
