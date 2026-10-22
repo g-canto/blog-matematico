@@ -1,4 +1,5 @@
-contenidoEntrada = /* html */ ` <section>
+contenidoEntrada = /* html */ ` 
+<section>
   <article class="content-card">
     <dl class="content-card-list">
       <dt class="list-item-title">Termino común.</dt>
@@ -114,4 +115,5 @@ contenidoEntrada = /* html */ ` <section>
     </dl>
     
   </article>
-</section>`;
+</section>
+`;
