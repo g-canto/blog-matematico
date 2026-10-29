@@ -1,24 +1,6 @@
-/* plantilla 
-
-<article class="content-card">
-    <section>
-        <ol class="content-card-list" id="pasos">
-            <li>Comprender el problema planteado.</li>
-            <li>Trazar un plan o seleccionar la fórmula.</li>
-            <li>Ejecutar las operaciones requeridas.</li>
-            <li>Revisar y verificar la solución.</li>
-        </ol>
-    </section>
-</article>
-
-*/
-
 contenidoEntrada = /* html */ `
 <article>
     <section>
-        <h2>
-            <button class="content-card-title">Casos de factorización</button>
-        </h2>
         <ul class="content-card-list" id="casos">
             <li>
                 Factor Común

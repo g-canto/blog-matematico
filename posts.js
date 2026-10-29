@@ -48,6 +48,14 @@ const publicaciones = [
     fecha: "2026-10-22",
     resumen: "Continuación de casos de factorización.",
   },
+  {
+    id: "07_ecuacionesPrimerGrado.js",
+    titulo: "Ecuaciones de Primer Grado",
+    archivo: "entradas/07_ecuacionesPrimerGrado.js",
+    fecha: "2026-10-29",
+    resumen:
+      "Metodologia y ejemplos para la resolucion de ecuaciones de primer grado.",
+  },
 ];
 
 const publicacionesOrdenadas = publicaciones.toReversed();
