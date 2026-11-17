@@ -56,6 +56,13 @@ const publicaciones = [
     resumen:
       "Metodologia y ejemplos para la resolucion de ecuaciones de primer grado.",
   },
+  {
+    id: "08_graficador.js",
+    titulo: "Graficador",
+    archivo: "entradas/08_graficador.js",
+    fecha: "2026-11-17",
+    resumen: "Graficadora aplicanco matrices de diferentes dimensiones.",
+  },
 ];
 
 const publicacionesOrdenadas = publicaciones.toReversed();
